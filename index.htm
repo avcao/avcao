@@ -1,4 +1,4 @@
-<center>½ñÌìÊÇ:<span><script language=Javascript type=text/Javascript> 
+<center>ä»Šå¤©æ˜¯:<span><script language=Javascript type=text/Javascript> 
  var day=""; 
  var month=""; 
  var ampm=""; 
@@ -12,28 +12,28 @@
  myyear= mydate.getYear(); 
  year=(myyear > 200) ? myyear : 1900 + myyear; 
  if(myweekday == 0) 
- weekday=" ĞÇÆÚÈÕ "; 
+ weekday=" æ˜ŸæœŸæ—¥ "; 
 else if(myweekday == 1) 
- weekday=" ĞÇÆÚÒ» "; 
+ weekday=" æ˜ŸæœŸä¸€ "; 
 else if(myweekday == 2) 
- weekday=" ĞÇÆÚ¶ş "; 
+ weekday=" æ˜ŸæœŸäºŒ "; 
 else if(myweekday == 3) 
- weekday=" ĞÇÆÚÈı "; 
+ weekday=" æ˜ŸæœŸä¸‰ "; 
 else if(myweekday == 4) 
- weekday=" ĞÇÆÚËÄ "; 
+ weekday=" æ˜ŸæœŸå›› "; 
 else if(myweekday == 5) 
- weekday=" ĞÇÆÚÎå "; 
+ weekday=" æ˜ŸæœŸäº” "; 
 else if(myweekday == 6) 
- weekday=" ĞÇÆÚÁù "; 
-document.write(year+"Äê"+mymonth+"ÔÂ"+myday+"ÈÕ "+weekday); 
- </script>|<b><FONT COLOR="#FF0000">±¾Õ¾ÒÑ¾­°²È«ÔËĞĞ:</FONT></b> 
+ weekday=" æ˜ŸæœŸå…­ "; 
+document.write(year+"å¹´"+mymonth+"æœˆ"+myday+"æ—¥ "+weekday); 
+ </script>|<b><FONT COLOR="#FF0000">æœ¬ç«™å·²ç»å®‰å…¨è¿è¡Œ:</FONT></b> 
  <span id="span_dt_dt"></span> 
  <SCRIPT language=javascript> 
  <!-- 
 //document.write(""); 
  function show_date_time(){ 
  window.setTimeout("show_date_time()", 1000); 
- BirthDay=new Date("09-04-2017 00:59:24");//½¨Õ¾ÈÕÆÚ 
+ BirthDay=new Date("09-04-2017 00:59:24");//å»ºç«™æ—¥æœŸ 
 today=new Date(); 
  timeold=(today.getTime()-BirthDay.getTime()); 
  sectimeold=timeold/1000 
@@ -46,8 +46,9 @@ today=new Date();
  e_minsold=(hrsold-e_hrsold)*-60; 
  minsold=Math.floor((hrsold-e_hrsold)*-60); 
  seconds=Math.floor((minsold-e_minsold)*-60); 
- span_dt_dt.innerHTML=daysold+"Ìì"+hrsold+"Ğ¡Ê±"+minsold+"·Ö"+seconds+"Ãë" ; 
+ span_dt_dt.innerHTML=daysold+"å¤©"+hrsold+"å°æ—¶"+minsold+"åˆ†"+seconds+"ç§’" ; 
  } 
 show_date_time(); 
  //--> 
  </SCRIPT>
+ 
