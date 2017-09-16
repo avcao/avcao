@@ -1,0 +1,53 @@
+<center>今天是:<span><script language=Javascript type=text/Javascript> 
+ var day=""; 
+ var month=""; 
+ var ampm=""; 
+ var ampmhour=""; 
+ var myweekday=""; 
+ var year=""; 
+ mydate=new Date(); 
+ myweekday=mydate.getDay(); 
+ mymonth=mydate.getMonth()+1; 
+ myday= mydate.getDate(); 
+ myyear= mydate.getYear(); 
+ year=(myyear > 200) ? myyear : 1900 + myyear; 
+ if(myweekday == 0) 
+ weekday=" 星期日 "; 
+else if(myweekday == 1) 
+ weekday=" 星期一 "; 
+else if(myweekday == 2) 
+ weekday=" 星期二 "; 
+else if(myweekday == 3) 
+ weekday=" 星期三 "; 
+else if(myweekday == 4) 
+ weekday=" 星期四 "; 
+else if(myweekday == 5) 
+ weekday=" 星期五 "; 
+else if(myweekday == 6) 
+ weekday=" 星期六 "; 
+document.write(year+"年"+mymonth+"月"+myday+"日 "+weekday); 
+ </script>|<b><FONT COLOR="#FF0000">本站已经安全运行:</FONT></b> 
+ <span id="span_dt_dt"></span> 
+ <SCRIPT language=javascript> 
+ <!-- 
+//document.write(""); 
+ function show_date_time(){ 
+ window.setTimeout("show_date_time()", 1000); 
+ BirthDay=new Date("09-04-2017 00:59:24");//建站日期 
+today=new Date(); 
+ timeold=(today.getTime()-BirthDay.getTime()); 
+ sectimeold=timeold/1000 
+ secondsold=Math.floor(sectimeold); 
+ msPerDay=24*60*60*1000 
+ e_daysold=timeold/msPerDay 
+ daysold=Math.floor(e_daysold); 
+ e_hrsold=(daysold-e_daysold)*-24; 
+ hrsold=Math.floor(e_hrsold); 
+ e_minsold=(hrsold-e_hrsold)*-60; 
+ minsold=Math.floor((hrsold-e_hrsold)*-60); 
+ seconds=Math.floor((minsold-e_minsold)*-60); 
+ span_dt_dt.innerHTML=daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒" ; 
+ } 
+show_date_time(); 
+ //--> 
+ </SCRIPT>
